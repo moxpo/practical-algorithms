@@ -18,7 +18,7 @@ def makeDictonary(numberOfStudents):
         grade1 = random.randint(1, 99)
         grade2 = random.randint(1, 99)
         grade3 = random.randint(1, 99)
-        studentDict.update({i:round((grade1+grade2+grade3)/3)})
+        studentDict.update({i: round((grade1+grade2+grade3)/3)})
     return studentDict
 
 
