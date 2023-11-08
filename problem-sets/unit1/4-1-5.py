@@ -1,34 +1,41 @@
 import timeit
 def ps5a():
     sum = 0
+    start = timeit.default_timer()
     for n in range(10000001):
         sum += n
-    print("For Loop :")
+    stop = timeit.default_timer()
+    total = (stop - start)
+    print("For Loop " + str(total) + " seconds")
     print(sum)
-    print(timeit.default_timer())
 
 
 def ps5b():
     n = 0
     sum = 0
+    start = timeit.default_timer()
     while n < 10000000:
         n += 1
         sum += n
-    print("While Loop :")
+    stop = timeit.default_timer()
+    total = (stop - start)
+    print("While Loop " + str(total) + " seconds")
     print(sum)
-    print(timeit.default_timer())
+
 
 
 def ps5c():
     n = 10000000
+    start = timeit.default_timer()
     sum = n * (n + 1) // 2
-    print("Using Formula :")
+    stop = timeit.default_timer()
+    total = (stop - start)
+    print("Formula " + str(total) + " seconds")
     print(sum)
-    print(timeit.default_timer())
 
 
-# ps5a()
-# ps5b()
+ps5a()
+ps5b()
 ps5c()
 
 

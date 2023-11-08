@@ -4,7 +4,7 @@ individual = []
 dict = {}
 number_of_classes = 0
 
-f = open('inFile.txt', 'r')
+f = open('../../inFile.txt', 'r')
 for i in f.readlines():
     list.append(i)
     list[-1] = list[-1].strip()
