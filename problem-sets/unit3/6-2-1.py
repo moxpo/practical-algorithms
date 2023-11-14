@@ -72,6 +72,7 @@ class SinglyLinkedList:
 
     def __init__(self):
         self.head = None
+        self.tail = None
 
     def empty(self):
         if self.head == None:
@@ -111,6 +112,20 @@ class SinglyLinkedList:
             list.append(node.get_key())
             node = node.nxt
         print (list)
+
+
+
+    def insert_tail(self, key):
+
+        node = NodeSinglyLinkedList(key)
+
+        while self.head != None:
+            node = node.nxt
+
+        self.tail = node
+
+
+####!!!!!!!!!!!#############
 
 
 sll = SinglyLinkedList()
