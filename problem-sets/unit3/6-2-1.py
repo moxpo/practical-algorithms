@@ -35,6 +35,22 @@ class NodeSinglyLinkedList:
         self.nxt = nxt
 
 
+
+nsll = NodeSinglyLinkedList()
+nsll.set_key(1)
+nsll.set_key(2)
+nsll.set_key(3)
+nsll.set_key(4)
+print ("NodeSinglyLinkedList")
+print ("get key :")
+print(nsll.get_key())
+nsll.set_nxt(5)
+print ("get next :")
+print(nsll.get_nxt())
+
+
+
+
 # 1b)
 #
 # Create a class SinglyLinkedList that can store integers. For this part, it should have a head pointer
@@ -95,3 +111,21 @@ class SinglyLinkedList:
             list.append(node.get_key())
             node = node.nxt
         print (list)
+
+
+sll = SinglyLinkedList()
+sll.empty()
+sll.insert_head(1)
+sll.insert_head(2)
+sll.insert_head(3)
+sll.insert_head(4)
+# sll.insert_head(13)
+sll.empty()
+print("\nSinglyLinkedList")
+print("print all keys :")
+sll.print_all_keys()
+print("size :")
+print(sll.size())
+print("search result :")
+if sll.search_key(3): print ("Found key")
+if sll.search_key(13): print("Found key")
