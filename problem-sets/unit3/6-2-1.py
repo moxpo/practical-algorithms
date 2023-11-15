@@ -47,6 +47,7 @@ print(nsll.get_key())
 nsll.set_nxt(5)
 print ("get next :")
 print(nsll.get_nxt())
+print("\n")
 
 
 
@@ -72,6 +73,7 @@ class SinglyLinkedList:
 
     def __init__(self):
         self.head = None
+        self.tail = None
 
     def empty(self):
         if self.head == None:
@@ -105,23 +107,47 @@ class SinglyLinkedList:
 
 
     def print_all_keys(self):
-        list = []
+        # list = []
         node = self.head
         while node != None:
-            list.append(node.get_key())
+            # list.append(node.get_key())
+            print(node)
             node = node.nxt
         print (list)
 
+    # def insert_tail(self, key):
+    #     if self.tail == None:
+    #         node = NodeSinglyLinkedList(key)
+    #         node.nxt = self.head
+    #         self.head = node
+    #     else:
+    #         node = self.head
+    #         while node.nxt != None:
+
+
+
+
+
+
+
+        # node = self.head
+        # while node.nxt != None:
+        #     node = node.nxt
+        #     self.key = key
+        #
+
+
+
 
 sll = SinglyLinkedList()
-sll.empty()
+print("ssl empty? -")
+print(sll.empty())
 sll.insert_head(1)
 sll.insert_head(2)
 sll.insert_head(3)
 sll.insert_head(4)
 # sll.insert_head(13)
-sll.empty()
-print("\nSinglyLinkedList")
+print("SinglyLinkedList")
 print("print all keys :")
 sll.print_all_keys()
 print("size :")
@@ -129,3 +155,5 @@ print(sll.size())
 print("search result :")
 if sll.search_key(3): print ("Found key")
 if sll.search_key(13): print("Found key")
+print("ssl empty? -")
+print(sll.empty())
