@@ -139,6 +139,20 @@ class SinglyLinkedList:
 
 
 
+
+    def insert_tail(self, key):
+
+        node = NodeSinglyLinkedList(key)
+
+        while self.head != None:
+            node = node.nxt
+
+        self.tail = node
+
+
+####!!!!!!!!!!!#############
+
+
 sll = SinglyLinkedList()
 print("ssl empty? -")
 print(sll.empty())
